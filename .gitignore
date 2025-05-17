@@ -10,6 +10,17 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Игнорируем всё в target кроме jacoco отчёта
+/target/*
+!/target/site/
+!/target/site/jacoco/
+!/target/site/jacoco/index.html
+
 # Package Files #
 *.jar
 *.war
