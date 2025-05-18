@@ -10,7 +10,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
 
@@ -21,15 +20,12 @@ public class CatTest {
         Cat cat = new Cat(new Feline());
         assertEquals("Мяу", cat.getSound());
     }
-
     @Test
     public void getFoodTest() throws Exception {
         Cat cat = new Cat(feline);
         List<String> expected = Arrays.asList("Животные", "Птицы", "Рыба");
-        //System.out.println(cat.getFood());
         Mockito.when(feline.eatMeat()).thenReturn(expected);
         List<String> actual = cat.getFood();
-        //System.out.println(actual);
         assertEquals(expected, actual);
     }
 }

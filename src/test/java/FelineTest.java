@@ -13,8 +13,6 @@ public class FelineTest {
     @Test
     public void eatMeatTest() throws Exception {
         Feline fel = new Feline();
-
-        // Ожидаемый список еды, который вернёт getFood("Хищник")
         List<String> expected = Arrays.asList("Животные", "Птицы", "Рыба");
         List<String> actual = fel.eatMeat();
         assertEquals(expected, actual);

@@ -1,8 +1,5 @@
 package com.example;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-
 import java.util.List;
 public class Lion {
 
